@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-</body>
-</html>
+
+<form class="card" id="surveyForm">
+
+  <h2>Survey Form</h2>
+
+  <!-- Text -->
+  <div class="field">
+    <label for="name">Full Name</label>
+    <input id="name" type="text" required>
+  </div>
+
+  <!-- Email -->
+  <div class="field">
+    <label for="email">Email Address</label>
+    <input id="email" type="email" required>
+  </div>
+
+  <!-- Number -->
+  <div class="field">
+    <label for="age">Age</label>
+    <input id="age" type="number" min="10" max="100">
+  </div>
+
+  <!-- Radio -->
+  <div class="field">
+    <label>Gender</label>
+    <div class="options">
+      <label><input type="radio" name="gender"> Male</label>
+      <label><input type="radio" name="gender"> Female</label>
+      <label><input type="radio" name="gender"> Other</label>
+    </div>
+  </div>
+
+  <!-- Checkbox -->
+  <div class="field">
+    <label>Services Used</label>
+    <div class="options">
+      <label><input type="checkbox"> Website</label>
+      <label><input type="checkbox"> Mobile App</label>
+      <label><input type="checkbox"> Support</label>
+    </div>
+  </div>
+
+  <!-- Select -->
+  <div class="field">
+    <label for="rating">Overall Experience</label>
+    <select id="rating" required>
+      <option value="">Choose an
