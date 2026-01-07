@@ -55,4 +55,31 @@
   <div class="field">
     <label for="rating">Overall Experience</label>
     <select id="rating" required>
-      <option value="">Choose an
+      <option value="">Choose an option</option>
+      <option>Excellent</option>
+      <option>Good</option>
+      <option>Average</option>
+      <option>Poor</option>
+    </select>
+  </div>
+
+  <!-- Range -->
+  <div class="field">
+    <label for="satisfaction">Satisfaction Level</label>
+    <input id="satisfaction" type="range" min="1" max="5">
+  </div>
+
+  <!-- Textarea -->
+  <div class="field">
+    <label for="feedback">Additional Feedback</label>
+    <textarea id="feedback" rows="4"></textarea>
+  </div>
+
+  <button type="submit">Submit</button>
+  <p class="success" id="successMsg"></p>
+
+</form>
+
+<script src="index.js"></script>
+</body>
+</html>
